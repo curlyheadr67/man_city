@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --city-colour: #6caddf;
+}
+
+* {
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: wrap;
+    
+
+}
+
+.main {
+    position: absolute;
+    top: 200px;
+    color: white;
+}
+
+.typical_lineup {
+    background: green;
+    position: absolute;
+    left: 500px;
+    top: 100px;
+    width: 320px;
+    height: 540px;
+    text-align: center;
+    color: white;
+}
+
+.stats {
+    color: black;
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+    
+}
+
+nav ul li {
+    position: fixed;
+    width: 100vw;
+    margin-left: -50px;
+    margin-top: -10px;
+    align-items: center;
+    justify-content: center;
+    top: 50px;
+    list-style: none;
+    background: var(--city-colour);
+    transition: top 0.3s;
+}
+
+nav ul li a{
+    width: 10px;
+    margin-left: 100px;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+@keyframes onHover {
+    from {transform: translateY(0px)}
+    to {transform: translateY(-4px)}
+}
+
+nav ul li:hover {
+    animation: onHover 1s ease;
+}
+
+div:hover {
+    animation: onHover 1s ease;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 1000,
+  'GRAD' 10,
+  'opsz' 0
+}
